@@ -11,6 +11,5 @@ export const ErrorHandler = (
       message: error.message ?? error
     })
   }
-
   next()
 }
