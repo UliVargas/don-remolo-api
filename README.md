@@ -1,8 +1,28 @@
 # Pizzeria Don Remolo REST API
 
-### This is a basic api for the ID For Ideas project 3, which serves as a practice.
+#### This is a basic api for the ID For Ideas project 3, which serves as a practice.
 
-<br>
+````
+prisma
+│   client.ts       # Instance for the prism client. It is the one that interacts with the database models
+│   schema.prisma   # The Prisma schema file (short: schema file, Prisma schema or schema) is the main configuration
+│                     file for your Prisma setup
+│   seed.ts         # File to populate the database with information from a mock
+└───__mocks__       # Folder with the dummy data to inect into the database from seed.ts
+src
+|   app.ts          # Server Config
+│   index.ts        # Application entry point
+│   middleware.ts   # functions that are executed before a route to do a specific action, for example protect a route
+|                     if it is not authenticated.
+└───ApiError        # Folder where all the functionality to generate errors is located
+└───config          # Environment variables and configuration related stuff
+└───controllers     # Application controllers
+└───routes          # Application
+└───services        # All the business logic is here
+└───useCases        # This is where we centralize our logic. Each use case orchestrates all of the logic for
+│                     a specific business use case.
+└───utilities       # Application utilities
+````
 
 ## Technologies
 Project is created with:

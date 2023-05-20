@@ -2,7 +2,7 @@ import express, { NextFunction, Request, Response, json } from 'express'
 import morgan from 'morgan'
 import ErrorHandler from './ApiError/handler'
 import { ContextHandler } from './config/context-handler'
-import RootRoutes from './router/v1/index.routes'
+import RootRoutes from './routes/v1/index.routes'
 import { HeadersHandler } from './config/headers-handler'
 
 const app = express()
