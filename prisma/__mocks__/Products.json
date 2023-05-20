@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Empanada de pollo y champiñones",
+    "description": "Una deliciosa empanada rellena de pollo tierno y champiñones salteados en una mezcla de hierbas y especias. El relleno jugoso y aromático hace de esta empanada una opción sabrosa y reconfortante.",
+    "price": 3000,
+    "img_url": "https://cdn0.recetasgratis.net/es/posts/7/9/5/empanadas_de_pollo_y_champinones_50597_600.webp",
+    "category": "empanada"
+  },
+  {
+    "name": "Cheesecake de frutos rojos",
+    "description": "Una suave y sedosa tarta de queso con una base crujiente de galleta, cubierta con una mezcla de frutos rojos frescos como fresas, arándanos y frambuesas. Es una combinación perfecta de dulzura y acidez.",
+    "price": 25000,
+    "img_url": "https://cdn0.recetasgratis.net/es/posts/1/4/9/cheesecake_de_frutos_rojos_73941_600.webp",
+    "category": "postre"
+  },
+  {
+    "name": "Té helado de melocotón",
+    "description": "El té helado de melocotón es una bebida fría y deliciosa preparada con té negro o verde, melocotones frescos o jarabe de melocotón, azúcar y hielo. Es una opción refrescante con el equilibrio justo entre el té y el dulzor de la fruta.",
+    "price": 7000,
+    "img_url": "https://chefeel.com/chefgeneralfiles/2022/07/te-scaled-880x756.jpg",
+    "category": "bebida"
+  },
+  {
+    "name": "Pizza de pera, jamón y gorgonzola",
+    "description": "Esta Pizza de pera, jamón y gorgonzola es una de mis pizzas favoritas ya que el toque dulce de la pera encaja muy bien con el salado del jamón, en contraste con el sabor especial del queso gorgonzola. Me estoy relamiendo al recordarla.",
+    "price": 35000,
+    "img_url": "https://i.blogs.es/ce69bc/650_1200-2-/1366_2000.jpg",
+    "category": "pizza"
+  },
+  {
+    "name": "Pepperoni ",
+    "description": "Es una pizza popular en Estados Unidos que lleva una base de salsa de tomate, queso mozzarella y rodajas de pepperoni, que es un tipo de salami de cerdo.",
+    "price": 15000,
+    "img_url": "https://placeralplato.com/files/2015/06/pizza-Margarita-640x480.jpg",
+    "category": "pizza"
+  },
+  {
+    "name": "Empanada de queso y espinacas",
+    "description": "Una empanada vegetariana rellena de una mezcla cremosa de queso derretido y espinacas salteadas con ajo y cebolla. El relleno es suave y sabroso, perfecto para los amantes de las opciones vegetarianas",
+    "price": 2500,
+    "img_url": "https://i0.wp.com/revistamariaorsini.com/wp-content/uploads/2018/03/empanadas-16.jpg?w=750&ssl=1",
+    "category": "empanada"
+  },
+  {
+    "name": "Bloody Mary",
+    "description": "El Bloody Mary es uno de los cócteles más populares de todos los tiempos. No es seguro que fuera exactamente así",
+    "price": 15000,
+    "img_url": "https://i.blogs.es/dbb5f7/bloody_mary/1366_2000.jpg",
+    "category": "bebida"
+  },
+  {
+    "name": "margaritaa",
+    "description": "Una deliciosa pizza con carne",
+    "price": 9000,
+    "img_url": "https://http2.mlstatic.com/receta-pizza-margarita-D_NQ_NP_836115-MLV25176629094_112016-F.jpg",
+    "category": "pizza"
+  },
+  {
+    "name": "Helado de fresa casero",
+    "description": "Un helado suave y cremoso hecho con fresas frescas. Cada cucharada es un estallido de sabor a fruta natural y refrescante. Perfecto para disfrutar en un día caluroso de verano.",
+    "price": 18000,
+    "img_url": "https://sivarious.com/wp-content/uploads/2022/06/helado-de-fresa.jpg",
+    "category": "postre"
+  },
+  {
+    "name": "Pizza mexicana de carne",
+    "description": "La segunda opción que os proponemos es una Pizza mexicana de carne elaborada con una base de tomate y queso cubierta con carne picada, cebolla y rodajas de aguacate",
+    "price": 20000,
+    "img_url": "https://i.blogs.es/4f01d2/650_1200-1-/1366_2000.jpg",
+    "category": "pizza"
+  },
+  {
+    "name": "Tarta de chocolate decadente",
+    "description": "Una deliciosa tarta de chocolate con un suave y esponjoso bizcocho de chocolate, relleno de crema de chocolate y cubierto con una ganache brillante. ¡Un sueño hecho realidad para los amantes del chocolate!",
+    "price": 150000,
+    "img_url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F21%2F2017%2F02%2F24%2F3a23ae4b-48b7-44eb-96a7-0e8e755683b6-2000.jpg",
+    "category": "postre"
+  },
+  {
+    "name": "Mojito",
+    "description": "El mojito es un cóctel clásico y refrescante originario de Cuba. Se prepara con ron blanco, hojas de menta fresca, azúcar, jugo de lima y soda. Es una bebida equilibrada y llena de sabor, perfecta para disfrutar en un día caluroso",
+    "price": 8000,
+    "img_url": "https://www.recetasderechupete.com/wp-content/uploads/2020/02/Mojito-bar-768x527.jpg",
+    "category": "bebida"
+  },
+  {
+    "name": "Pizza de lacón con champiñones y rúcula",
+    "description": "Esta Pizza de lacón con champiñones y rúcula es buena para acostumbrarse a acompañar las pizzas con una buena cantidad de hojas verdes, que colocamos encima en el momento de servirla y llevarla a la mesa.",
+    "price": 10000,
+    "img_url": "https://i.blogs.es/10d020/650_1200/1366_2000.jpg",
+    "category": "pizza"
+  },
+  {
+    "name": "Empanada de jamón y queso",
+    "description": "Una empanada clásica y sencilla con un relleno irresistible de jamón y queso. La combinación de sabores salados y el contraste entre la masa crujiente y el queso derretido hacen de esta empanada una elección popular.",
+    "price": 35000,
+    "img_url": "https://www.clarin.com/img/2021/04/12/WYz8Yr8tB_1256x620__1.jpg",
+    "category": "empanada"
+  },
+  {
+    "name": "Limonada de fresa",
+    "description": "Una variante refrescante de la clásica limonada, la limonada de fresa combina jugo de limón fresco, fresas trituradas, azúcar y agua fría. Es una bebida vibrante y dulce, perfecta para saciar la sed en días soleados.",
+    "price": 7000,
+    "img_url": "https://i0.wp.com/gourmetlikeme.com/wp-content/uploads/2013/07/la-foto-21.jpg?resize=225%2C300",
+    "category": "bebida"
+  },
+  {
+    "name": "Empanada de carne",
+    "description": "Descripción: Una empanada clásica rellena de una jugosa mezcla de carne picada, cebolla, especias y condimentos. La masa crujiente envuelve el sabroso relleno, creando una combinación irresistible.",
+    "price": 2000,
+    "img_url": "https://assets.unileversolutions.com/recipes-v2/210994.jpg?imwidth=800",
+    "category": "empanada"
+  },
+  {
+    "name": "Crème brûlée",
+    "description": "Un clásico postre francés que consiste en una crema suave y delicada con una fina capa de azúcar caramelizado en la parte superior. Al romper la capa caramelizada con la cuchara, revelarás la textura cremosa y el sabor dulce de la crema.",
+    "price": 25000,
+    "img_url": "https://www.splendaenespanol.com/wp-content/themes/bistrotheme/assets/recipe-images/coconut-creme-brulee-2000w.jpg",
+    "category": "postre"
+  },
+  {
+    "name": "Piña colada",
+    "description": "La piña colada es una bebida tropical y cremosa que combina ron, jugo de piña y crema de coco. Es como un sorbo de paraíso, con sabores dulces y tropicales que te transportarán a una playa exótica.",
+    "price": 7000,
+    "img_url": "https://cdn0.recetasgratis.net/es/posts/4/6/5/pina_colada_6564_600.webp",
+    "category": "bebida"
+  }
+]
