@@ -1,9 +1,11 @@
 import Router from 'express-promise-router'
-import { getAllProducts } from '../../controllers/products.controllers'
+import { getAllProducts, updateProduct } from '../../controllers/products.controllers'
 import { Auth } from '../../middleware'
 
 const router = Router()
 
-router.get('/', Auth, getAllProducts)
+router.get('/', getAllProducts)
+router.patch('/:productId', updateProduct)
+
 
 export default router
