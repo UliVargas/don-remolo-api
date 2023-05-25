@@ -11,16 +11,30 @@ export const GetAllProductsService = async () => {
   })  
 }
 
-export const findById = async (productId: string) => {
+export const findByIdService = async (productId: string) => {
   return prisma.product.findUnique({
     where: { id: productId }
     })  
 }
 
-export const updateProduct = (productId: string, updatedProduct: Product):Promise<Product> => {
+export const updateProductService = (productId: string, updatedProduct: Product):Promise<Product> => {
 
   return prisma.product.update({
     where: { id: productId },
     data: updatedProduct
-  });  
+  })
+}
+
+export const deleteProductService = async (productId: string) => {
+  
+  return prisma.product.delete({
+    where: { id: productId }
+  })
+}
+
+export const createProductService = async (productData: Product) => {
+
+  return prisma.product.create({
+    data: productData
+  })
 }

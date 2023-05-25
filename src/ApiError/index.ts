@@ -28,7 +28,7 @@ export default {
   },
   PRODUCT_DONT_EXIST: {
     status: 404,
-    message: 'El producto no existe'
+    message: 'El no existe'
   },
   ACCOUNT_ALREADY_EXISTS: {
     status: 409,
