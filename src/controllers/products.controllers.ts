@@ -22,5 +22,5 @@ export const deleteProduct = async (req: Request, res: Response) => {
 
 export const createProduct = async (req: Request, res: Response) => {
   const createProductData = await CreateProduct(req.body);
-  res.status(200).json(createProductData)
+  res.status(200).json(createProductData);
 }
