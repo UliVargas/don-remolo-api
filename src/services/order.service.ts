@@ -12,7 +12,7 @@ export const GetAllOrdersService = async () => {
 }
 
 export const AddOrderService = async (dataOrder:OrderWithItems) => {
-  await prisma.order.create({
+  return await prisma.order.create({
     data: {
       ...dataOrder,
       items: {
@@ -24,15 +24,4 @@ export const AddOrderService = async (dataOrder:OrderWithItems) => {
 
     }
   })
-  const allItems = await prisma.order.findMany({
-    include: {
-      items: {
-        select: {
-          id: true,
-          quantity: true
-        }
-      }
-    }
-  })
-  return allItems
 }
