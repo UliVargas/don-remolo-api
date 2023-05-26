@@ -1,3 +1,4 @@
+import { Order } from '@prisma/client'
 import { prisma } from '../../prisma/client'
 import { OrderWithItems } from '../types/orderTypes'
 
@@ -24,4 +25,24 @@ export const AddOrderService = async (dataOrder:OrderWithItems) => {
 
     }
   })
+}
+export const UpdateOrderService = async (data:{idOrder:string, order:OrderWithItems}) => {
+  const { idOrder, order } = data
+  // crear objeto sin la prpiedad items
+  const { items, ...orderWithOutItems } = order
+
+  const updatedOrder = await prisma.order.update({
+    where: { id: idOrder },
+    data: orderWithOutItems
+  })
+
+  // actualizar items relacionados con la ordern
+  for (const item of items) {
+    await prisma.orderItem.update({
+      where: { id: item.id },
+      data: { quantity: item.quantity }
+    })
+  }
+
+  return updatedOrder
 }
