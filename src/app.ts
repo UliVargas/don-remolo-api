@@ -21,6 +21,8 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   next(error)
 })
 
+console.log('Test')
+
 app.use(ErrorHandler)
 
 export default app
