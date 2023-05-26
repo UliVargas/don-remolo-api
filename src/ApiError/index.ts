@@ -26,9 +26,9 @@ export default {
     status: 403,
     message: 'No tienes los permisos necesarios'
   },
-  ACCOUNT_DONT_EXIST: {
+  PRODUCT_DONT_EXIST: {
     status: 404,
-    message: 'La cuenta no existe'
+    message: 'El no existe'
   },
   ACCOUNT_ALREADY_EXISTS: {
     status: 409,
