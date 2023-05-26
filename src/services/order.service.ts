@@ -1,3 +1,4 @@
+import { Order } from '@prisma/client'
 import { prisma } from '../../prisma/client'
 import { OrderWithItems } from '../types/orderTypes'
 
@@ -22,6 +23,16 @@ export const AddOrderService = async (dataOrder:OrderWithItems) => {
         }))
       }
 
+    }
+  })
+}
+export const GetOneOrderService = async (idOrder:string): Promise<Order> => {
+  return prisma.order.findFirst({
+    where: { id: idOrder },
+    include: {
+      items: {
+        select: { quantity: true, id: true, productId: true }
+      }
     }
   })
 }
