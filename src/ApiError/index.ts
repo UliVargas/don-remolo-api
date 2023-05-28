@@ -28,7 +28,7 @@ export default {
   },
   PRODUCT_DONT_EXIST: {
     status: 404,
-    message: 'El no existe'
+    message: 'El producto no existe'
   },
   ACCOUNT_ALREADY_EXISTS: {
     status: 409,
@@ -49,5 +49,9 @@ export default {
   EXISTING_ASSOCIATION: {
     status: 409,
     message: 'Ya hay un usuario asociado a esta cuenta'
+  },
+  THE_PRODUCT_IS_NOT_CREATED: {
+    status: 500,
+    message: 'Hubo un problema al crear el producto'
   }
 }

@@ -27,10 +27,10 @@ model Profile {
 
 model Product {
   id String @id @default(uuid())
-  name String
+  name String @unique
   price Int
-  description String?
-  imgURL String
+  description String? @unique
+  imgURL String @unique
   category Category @relation(fields: [categoryId], references: [id])
   categoryId String
   items OrderItem[]

@@ -10,5 +10,4 @@ router.get('/find/:productId', findById)
 router.delete('/delete/:productId', deleteProduct)
 router.post('/newProduct', createProduct)
 
-
 export default router
