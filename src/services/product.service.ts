@@ -18,7 +18,6 @@ export const findByIdService = async (productId: string) => {
 }
 
 export const updateProductService = (productId: string, updatedProduct: Product): Promise<Product> => {
-
   return prisma.product.update({
     where: { id: productId },
     data: updatedProduct
@@ -26,14 +25,12 @@ export const updateProductService = (productId: string, updatedProduct: Product)
 }
 
 export const deleteProductService = async (productId: string) => {
-
   return prisma.product.delete({
     where: { id: productId }
   })
 }
 
 export const createProductService = async (productData: Product) => {
-
   return prisma.product.create({
     data: productData
   })
