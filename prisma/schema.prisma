@@ -27,7 +27,7 @@ model Profile {
 
 model Product {
   id String @id @default(uuid())
-  name String
+  name String @unique
   price Int
   description String?
   imgURL String
