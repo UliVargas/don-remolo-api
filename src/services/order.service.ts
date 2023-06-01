@@ -46,3 +46,14 @@ export const UpdateOrderService = async (data:{idOrder:string, order:OrderWithIt
 
   return updatedOrder
 }
+
+export const GetOneOrderService = async (idOrder:string): Promise<Order> => {
+  return prisma.order.findFirst({
+    where: { id: idOrder },
+    include: {
+      items: {
+        select: { quantity: true, id: true, productId: true }
+      }
+    }
+  })
+}
