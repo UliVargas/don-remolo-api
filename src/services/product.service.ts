@@ -35,3 +35,9 @@ export const createProductService = async (productData: Product) => {
     data: productData
   })
 }
+
+export const findProductByNameService = (productName: string) => {
+  return prisma.product.findFirst({
+    where: { name: productName }
+  })
+}

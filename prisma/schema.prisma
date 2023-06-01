@@ -29,8 +29,8 @@ model Product {
   id String @id @default(uuid())
   name String @unique
   price Int
-  description String? @unique
-  imgURL String @unique
+  description String?
+  imgURL String
   category Category @relation(fields: [categoryId], references: [id])
   categoryId String
   items OrderItem[]

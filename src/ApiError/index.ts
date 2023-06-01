@@ -53,5 +53,9 @@ export default {
   THE_PRODUCT_IS_NOT_CREATED: {
     status: 500,
     message: 'Hubo un problema al crear el producto'
+  },
+  PRODUCT_ALREADY_EXIST: {
+    status: 409,
+    message: 'El producto ya existe'
   }
 }
