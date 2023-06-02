@@ -14,7 +14,7 @@ export const getAllOrders = async (req:Request, res:Response, next:NextFunction)
 
 export const updateOrder = async (req:Request, res:Response, next:NextFunction) => {
   const data = {
-    idOrder: req.params.idOrder,
+    idOrder: req.params.orderId,
     order: req.body
   }
   res.status(200).json(await editOrder(data))
@@ -22,5 +22,5 @@ export const updateOrder = async (req:Request, res:Response, next:NextFunction) 
 
 export const getOneOrderById = async (req:Request, res:Response, next:NextFunction) => {
   const { params } = req
-  res.status(200).json(await getOneOrder(params.idOrder))
+  res.status(200).json(await getOneOrder(params.orderId))
 }
