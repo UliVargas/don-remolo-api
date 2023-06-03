@@ -30,6 +30,10 @@ export default {
     status: 404,
     message: 'El producto no existe'
   },
+  ORDER_DONT_EXIST: {
+    status: 404,
+    message: 'La orden no existe'
+  },
   ACCOUNT_ALREADY_EXISTS: {
     status: 409,
     message: 'La cuenta ya existe'
