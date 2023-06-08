@@ -8,6 +8,7 @@ const propsItem = {
 const props = {
   nameClient: Joi.string(),
   comment: Joi.string(),
+  phone: Joi.string(),
   items: Joi.array().items(
     Joi.object({
       productId: propsItem.productId.required(),
@@ -19,5 +20,6 @@ const props = {
 export const createOrder = Joi.object({
   nameClient: props.nameClient.required(),
   comment: props.comment,
+  phone: props.phone.required(),
   items: props.items.required()
 })

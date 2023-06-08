@@ -45,6 +45,7 @@ model Category {
 model Order {
   id String @id @default(uuid())
   nameClient String
+  phone String
   Date DateTime @default(now())
   status Status @default(CREATED)
   comment String?
