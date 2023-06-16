@@ -9,7 +9,13 @@ export const createOrder = async (req:Request, res:Response) => {
 }
 
 export const getAllOrders = async (req:Request, res:Response, next:NextFunction) => {
-  res.status(200).json(await getAll())
+  const querys = {
+    status: req.query.status ? req.query.status.toString() : null,
+    offset: req.query.offset ? Number(req.query.offset) : 1,
+    limit: req.query.limit ? Number(req.query.limit) : 10,
+    date: req.body.date ? req.body.date.toString() : ''
+  }
+  res.status(200).json(await getAll(querys))
 }
 
 export const updateOrder = async (req:Request, res:Response, next:NextFunction) => {
