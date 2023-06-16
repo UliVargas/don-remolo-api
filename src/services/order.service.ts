@@ -5,13 +5,18 @@ import { OrderWithItems, QueryType } from '../types/orderTypes'
 export const GetAllOrdersService = async (querys:QueryType) => {
   const { offset, limit, status, date } = querys
   const skip = (offset - 1) * limit
-  const where: { status?: Status, Date?: string} = {}
+  const where: { status?: Status, Date?:{ gte: string, lt: string }} = {}
+
+  const isoString = new Date(date)
 
   if (status) {
     where.status = Status[status as keyof typeof Status]
   }
   if (date) {
-    where.Date = date
+    where.Date = {
+      gte: isoString.toISOString(),
+      lt: new Date(isoString.getTime() + 24 * 60 * 60 * 1000).toISOString()// fecha de fin (día siguiente), excluyendo la hora
+    }
   }
   return await prisma.order.findMany({
     where,
