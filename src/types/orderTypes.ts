@@ -6,5 +6,6 @@ export type QueryType = {
     offset: number,
     limit: number,
     status: string,
-    date: string
+    dateStart: string,
+    dateEnd:string
 }
