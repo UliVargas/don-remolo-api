@@ -12,22 +12,25 @@ export const getAllOrders = async (req: Request, res: Response, next: NextFuncti
   const {
     status,
     offset = 1,
-    limit = 10
+    limit = 10,
+    dateStart,
+    dateEnd
 
   } = req.query
-  const { date } = req.body
 
   res.status(200).json(await getAll({
     status,
     offset: Number(offset),
     limit: Number(limit),
-    date
+    dateStart,
+    dateEnd
 
   } as {
     status: string
     offset: number
     limit: number
-    date: string
+    dateStart: string
+    dateEnd:string
   }))
 }
 
