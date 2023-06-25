@@ -11,7 +11,7 @@ interface Error {
   message: string | null
 }
 
-export const Auth = (req: RequestExtended, res: Response, next: NextFunction) => {
+export const Auth = async (req: RequestExtended, res: Response, next: NextFunction) => {
   const token = req.headers.authorization?.split(' ')[1]
 
   if (!token) {
@@ -24,7 +24,7 @@ export const Auth = (req: RequestExtended, res: Response, next: NextFunction) =>
     throw error
   }
 
-  const tokenDecoded = JWTVerify(token) as User
+  const tokenDecoded = await JWTVerify(token) as User
 
   if (tokenDecoded) {
     req.user = tokenDecoded

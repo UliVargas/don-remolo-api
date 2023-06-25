@@ -1,10 +1,16 @@
-import { sign, verify } from 'jsonwebtoken'
+import { SignJWT, jwtVerify } from 'jose'
 import { env } from '../config/env'
 
+const secret = new TextEncoder().encode(env.JWT_SECRET_KEY)
+
 export const JWTSign = <T>(data: T) => {
-  return sign({ payload: data }, env.JWT_SECRET_KEY, { expiresIn: '24h' })
+  return new SignJWT({ payload: data })
+    .setProtectedHeader({ alg: 'HS256' })
+    .setIssuedAt()
+    .setExpirationTime('1m')
+    .sign(secret)
 }
 
-export const JWTVerify = (token: string) => {
-  return verify(token, env.JWT_SECRET_KEY)
+export const JWTVerify = async (token: string) => {
+  return (await jwtVerify(token, secret)).payload
 }
