@@ -7,7 +7,7 @@ export const JWTSign = <T>(data: T) => {
   return new SignJWT({ payload: data })
     .setProtectedHeader({ alg: 'HS256' })
     .setIssuedAt()
-    .setExpirationTime('1m')
+    .setExpirationTime('24h')
     .sign(secret)
 }
 
